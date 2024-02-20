@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URL convertor for .htaccess redirects</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>URL convertor for .htaccess redirects</h1>
+      <form action="#">
+        <div class="form-group">
+          <label for="url">Domain:</label>
+          <input type="text" id="domain" name="domain" />
+        </div>
+
+        <div class="form-group">
+          <label for="url">Source URL:</label>
+          <input type="text" id="sourceUrl" name="souceUrl" />
+        </div>
+        <div class="form-group">
+          <label for="url">Destination URL:</label>
+          <input type="text" id="destinationUrl" name="destinationUrl" />
+        </div>
+        <button id="convert" type="button">Convert</button>
+      </form>
+    </div>
+    <div class="container">
+      <strong>Results:</strong>
+      <div id="results">
+        <span id="cond"></span>
+        <span id="rule"></span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
